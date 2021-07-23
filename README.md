@@ -162,15 +162,18 @@ One possible answer : [2, 1, 4, 3]
 Another possible answer : [4, 1, 3, 2]
                                                                                               
  Code:
-   public class Solution {
-    public ArrayList<Integer> wave(ArrayList<Integer> A) {
+   public class Solution 
+   {
+    public ArrayList<Integer> wave(ArrayList<Integer> A) 
+    {
         int n=A.size();
         Collections.sort(A);
         for(int i=0;i<n;i=i+2)
         {
             //System.out.println(i+" "+ (i+1) );
             //System.out.println(A);
-            if(i+1 <n){
+            if(i+1 <n)
+            {
                 int temp=A.get(i);
                 A.set(i,A.get(i+1));
                 A.set(i+1,temp);
